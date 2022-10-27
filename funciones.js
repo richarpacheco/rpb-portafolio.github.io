@@ -2,21 +2,28 @@
 
 $(document).ready(function(){
         
-$("#aboutme").hide();
-$("#container-skills").hide();
-$("#portafolios,#title-portafolio").hide();
+
+$("#cursos,#title-cursos,#servicios,#aboutme,#container-skills,#title-portafolio").hide();
 
 $(function(){
 $(document).scroll(function(){
     if($(this).scrollTop()>100){
     $("#aboutme").fadeIn(2000); 
-    } // close if
+    } 
     if($(this).scrollTop()>891){
         $("#container-skills").fadeIn(2000); 
-    } // close if
+    } 
     if($(this).scrollTop()>1369){
         $("#portafolios,#title-portafolio").fadeIn(2000); 
-    } // close if
+    } 
+
+    if($(this).scrollTop()>1883){
+        $("#cursos,#title-cursos").fadeIn(2000); 
+    } 
+
+    if($(this).scrollTop()>2714){
+        $("#servicios,#title-cursos").fadeIn(2000); 
+    } 
  })//close de window.scroll function
  }) //close $(function)
 
