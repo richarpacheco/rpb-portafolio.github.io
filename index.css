@@ -10,8 +10,30 @@
     
 }
 
+/*BOTON IR ARRIBA*/
+
+a.scroll-top { 
+	color: #fff;
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	bottom: 50px;
+	right: 30px;
+	font-size: 20px;
+	text-align: center;
+}
+a.scroll-top i {
+	position: relative;
+	top: 2px;
+ 
+}
+
+/*BOTON IR ARRIBA*/
+
 
 /*HEADER Y FOOTER*/
+
+/* FOOTER */
 #copyright{
     text-align: center;
 }
@@ -45,10 +67,9 @@ i{
     transition-duration: .1s; 
     background: rgb(222, 221, 221);
 }
+/* FIN FOOTER */
 
-
-
-
+/* HEADER */
 
 header{
     background-image: url(recursos/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg);
@@ -64,7 +85,7 @@ header{
 }
 #code-icon{
     color: #fff;
-    font-size: 2em;
+    font-size: 1em;
 }
  #me{
     color: #fff;
@@ -78,6 +99,7 @@ header{
     backdrop-filter: blur(5px); */
 }
 
+
 #me strong{
     font-size: 2em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
@@ -90,70 +112,48 @@ header{
 }
 
 
-
-
-/* FIN HEADER Y FOOTER */
-
-
-/* LOGOS */
-
-#contain-image{
-
-    margin-bottom: 100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-
-#contain-image img{
-   width: 100%;
-   height: 100%;
-}
-
-
-
-
-/* FIN LOGOS */
-
+/* FIN HEADER */
 
 /* BARRA DE NAVEGACION******************************************************* */
-/* Configuración para cuando se oculta el menu*/
+
 
 nav ul{
- display: flex;
- justify-content: center;
- align-items: center;
- transform:translateY(10px);
-}
-@media (max-width:800px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform:translateY(10px);
+   }
+   
+   @media (max-width:800px) {
+   
+          li{
+           margin-bottom:20px ;
+          }
+   }
+   
+   
+   li{
+       padding: 10px 12px;
+       background-color: rgba(255, 255, 255, 0.1);
+       -webkit-backdrop-filter: blur(10px);
+       backdrop-filter: blur(5px);
+       margin-right: 20px;
+   }
+   li a:hover{
+       color: rgb(70, 137, 213);
+   }
+   
+   nav a{
+       
+       color: rgb(255, 255, 255);
+   }
+   
+   
+   /* BARRA DE NAVEGACION******************************************************** */
 
-       li{
-        margin-bottom:20px ;
-       }
-}
 
+/* FIN HEADER,FOOTER  Y NAV*/
 
-li{
-    padding: 10px 12px;
-    background-color: rgba(255, 255, 255, 0.1);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(5px);
-    margin-right: 20px;
-}
-li a:hover{
-    color: rgb(70, 137, 213);
-}
-
-nav a{
-    
-    color: rgb(255, 255, 255);
-}
-
-
-/*Configuración para cuando se abre el menu*/
-
-
-/* BARRA DE NAVEGACION******************************************************** */
 
 /* MI FOTO DE PERFIL  CON DESCRIPCION*/
 
@@ -212,7 +212,7 @@ nav a{
 
 
 
-/* FIN CONTAINER DESCRIPTIVO***************** */
+/* CONTAINER DESCRIPTIVO***************** */
 
 
 
@@ -251,12 +251,12 @@ nav a{
 }
 #galeria i{
     box-shadow: 0px 30px 30px 0px #000;
+
 }
 #galeria i:hover{
-    transform: rotate(5deg);
+    transform: rotate(8deg);
 }
 /* CONTENEDOR DE SKILLS ICONOS */
-
 
 
 
@@ -265,8 +265,17 @@ nav a{
 #portafolios{ 
     display: flex;
     justify-content: space-around;
+    margin-bottom: 300px;
 }
-
+#title-portafolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
 #port-div{
     
     color: #fff;
@@ -319,6 +328,82 @@ nav a{
 
 /* MIS PORTAFOLIOS**************** */
 
+/* CONTENEDOR CURSOS */
+
+#cursos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin-bottom: 300px;
+}
+
+#cursos a{
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+}
+#cursos a:hover{
+    color: rgb(30, 198, 231);
+}
+
+#cursos button{
+    border: none;
+}
+
+#title-cursos{
+    display: flex;
+    font-size: 1.5em;
+    font-family: monospace;
+    text-decoration: underline;
+    justify-content: center;
+
+}
+
+
+/* FIN CONTENEDOR CURSOS */
+
+
+/* CONTENEDOR SERVICIOS */
+#servicios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 300px;
+}
+.card i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5em;
+    
+}
+
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 35px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .card:hover i{
+    color: rgb(255, 0, 0);
+  }
+  /* Add some padding inside the card container */
+  .container {
+    border-top: 1px solid #000;
+    padding: 2px 16px;
+  }
+/* CONTENEDOR SERVICIOS CLOSE */
+
+
+
+
 
 /* FORMULARIO****************************************************** */
 #h1-form{
@@ -329,9 +414,18 @@ nav a{
 #apartado-formulario{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 200px;
-
+ 
 }
+
+@media (max-width:480px){
+    #apartado-formulario img{
+        width: 200px;
+    }
+}
+
+
 #title-above-formu{
     display: flex;
     justify-content: center;
@@ -368,10 +462,9 @@ textarea{
 @media (max-width:800px){
     
 .btn{
-
     width: 30vw;
-
 }
+
 }
 
 
@@ -388,6 +481,13 @@ textarea:focus{
 
 
 /* FORMULARIO****************************************************** */
+
+
+
+
+
+
+
 
 
 

@@ -19,11 +19,14 @@
 
 <!-- CABECERA -->
     <header>
+
+
         
         <nav>        
             <ul>   
-                 <li><a href="#redes">Redes</a></li>
-                 <li><a href="#container-skills">Acerca de mi</a></li>
+                 <li><a href="#apartado-formulario">Contact</a></li>
+                 <li><a href="#aboutme">About</a></li>
+                 <li><a href="#container-skills">Skills</a></li>
              </ul>     
      </nav>
 
@@ -40,6 +43,10 @@
         <img src="recursos/WhatsApp Image 2022-09-20 at 5.07.45 PM.jpeg" width="300px" height="300px">
     </div>
     
+    
+<a href="#" class="scroll-top" title="Ir arriba">
+    <i class="bi bi-arrow-up-circle-fill"></i>
+</a>
 
 
 
@@ -96,6 +103,7 @@
             <i class='bx bxl-php' style="font-size: 8em; color:blueviolet;"></i>
             <i class='bx bxl-java' style="font-size: 8em; color: #1474e5;"></i>
             <i class='bx bxl-javascript' style='color:#f8f825;font-size: 8em;' ></i>
+            <i class='bx bxl-git' style='color:#ff3636;font-size: 8em ;'  ></i>
             <i class='bx bxs-terminal'  style="font-size: 8em;"></i>
             <i class='bx bxl-bootstrap' style='color:rgba(111,20,229,0.99);font-size: 8em;'  ></i>
             <i class='bx bxl-css3' style='color:#1474e5;font-size: 8em;'  ></i>
@@ -107,13 +115,14 @@
 <!-- FIN SKILLS -->
 
 <!-- CONTENEDOR ANIMADO CON DIRECCION A GITHUB -->
+<div id="title-portafolio">Proyectos</div>
 <div id="portafolios">
 
     <div id="port-div">
   
         
         <div class="hoverme">
-            <a href=""><i class="bi bi-github"></i>&nbsp;Repository</a>
+            <a href="https://github.com/richarpacheco/rpb-portafolio.github.io.git" target="_blank"><i class="bi bi-github"></i>&nbsp;Repository</a>
         </div>
         
     </div>
@@ -121,11 +130,85 @@
 </div>
 <!-- FIN CONTENEDOR ANIMADO CON DIRECCION A GITHUB -->
 
+<div id="title-cursos">Ve aqui la constancia de mi Formación</div>
+<div id="cursos">
+    <div class="card">
+        <i class='bx bxs-devices'></i>
+        <div class="container">
+          <h4><b>HTML/CSS</b></h4>
+      
+         <a href="recursos/certificate-of-completion-for-aprende-html5-y-css3-desde-cero.pdf">Click</a>
+          
+        </div>
+      </div>
+      <div class="card">
+        <i class='bx bxs-paint'></i>
+        <div class="container">
+          <h4><b>Diseño Creativo</b></h4>
+       
+            <a href="recursos/certificate-of-completion-for-introduccion-a-la-programacion-con-javascript.pdf">Javascript</a>
+      
+        </div>
+      </div>
+      <div class="card">
+        <i class='bx bx-code-curly'></i>
+        <div class="container">
+          <h4><b>Desarrollo</b></h4>
+          <a href="recursos/Coursera MT4SY3ZZV2UJ.pdf">Coursera</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class='bx bx-code-curly'></i>
+        <div class="container">
+          <h4><b>Desarrollo</b></h4>
+          <a href="recursos/constancia iti.jpeg">UTU-ITI</a>
+        </div>
+      </div>
+</div>
+
+<div id="title-cursos">Los Servicios que ofrezco</div>
+<div id="servicios">
+    <div class="card">
+        <i class='bx bxs-devices'></i>
+        <div class="container">
+          <h4><b>Full Responsive</b></h4>
+          <p>
+            Su sitio se mostrará correctamente en <br>
+             cualquier dispositivo, incluidas computadoras <br>
+             de escritorio, mesas y teléfonos móviles
+            </p>
+        </div>
+      </div>
+      <div class="card">
+        <i class='bx bxs-paint'></i>
+        <div class="container">
+          <h4><b>Diseño Creativo</b></h4>
+          <p>
+            un buen y atractivo diseño web lo ayuda a mantener <br>
+            sus clientes potenciales en su sitio, que es la cara digital de su negocio
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <i class='bx bx-code-curly'></i>
+        <div class="container">
+          <h4><b>Desarrollo</b></h4>
+          <p> ¿Necesitas una página web para tu negocio o proyecto? <br>
+             Puedo ayudarte a crear un sitio web que te encante.</p>
+        </div>
+      </div>
+</div>
+
+
+
 <!-- FORMULARIO -->
 
     <br><br>
     <h1 id="title-above-formu">CONTACTO:</h1>
+    
     <div id="apartado-formulario">
+        <img src="recursos/contact.jpeg" alt="" width="500px">
             <form action="sendmail.php" method="post">
                 <label for="name">NOMBRE:</label><br>
                 <input type="text" name="nombre" id="nom" required>
@@ -144,13 +227,15 @@
                 <label for="msg">MENSAJE:</label><br>
                 <textarea name="mensaje" id="" cols="30" rows="10" required>Escribe tu mensaje</textarea>
                 <div id="buttons">
-                    <button id="send" class="btn" type="submit">Send Message</button>
+                    <button id="send" class="btn" type="submit">Send</button>
                     <button id="cls" class="btn" type="reset">Cancel</button>  
                 </div>
             </form>
     </div>
 
 <!-- FIN FORMULARIO -->
+
+
 
 
 <!-- PIE DE PAGINA -->
